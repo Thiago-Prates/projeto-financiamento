@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+  --dark-blue: #023e8a;
+  --blue: #0077b6;
+  --light-blue: #00b4d8;
+  --black: #21272e;
+  --gray: #6c757d;
+}
+
+body {
+  background: linear-gradient(
+    56.2deg,
+    var(--blue) 1.3513513513513513%,
+    var(--dark-blue) 100%
+  );
+  background-blend-mode: normal;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 24px;
+  color: var(--black);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+form {
+  width: 500px;
+  background-color: #f1f1f1;
+  border: 1px #ccc solid;
+  padding: 36px;
+  border-radius: 8px;
+
+  -webkit-box-shadow: 0px 8px 30px -12px rgb(255, 255, 255, 0.3);
+  -moz-box-shadow: 0px 8px 30px -12px rgb(255, 255, 255, 0.3);
+  box-shadow: 0px 8px 30px -12px rgb(255, 255, 255, 0.3);
+}
+
+form .input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+form .input label {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+form .input input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px var(--gray) solid;
+  font-size: 14px;
+}
+
+form .input input:focus-visible {
+  outline-color: var(--light-blue);
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+form .input .help {
+  color: #585858;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+form .buttons,
+form .result {
+  margin-top: 12px;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form .result .resultName {
+  margin-bottom: 10px;
+  color: var(--black);
+}
+
+form .buttons button {
+  margin: 12px 0px;
+  padding: 12px 36px;
+  color: #f7faf8;
+  background: var(--blue);
+  border: 1px var(--dark-blue) solid;
+  border-radius: 8px;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  -webkit-box-shadow: 0px 8px 30px -12px #0077b659;
+  -moz-box-shadow: 0px 8px 30px -12px #0077b659;
+  box-shadow: 0px 8px 30px -12px #0077b659;
+}
+
+form .buttons button:hover {
+  filter: brightness(0.8);
+  transition: 0.5s ease;
+}
+
+form footer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
